@@ -28,7 +28,7 @@ public class DemoWebServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter pw = response.getWriter();
-		pw.println("<h1>hello");
+		pw.println("<h1>Demo Servlet");
 	}
 
 	/**
