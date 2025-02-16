@@ -1,6 +1,7 @@
 package hongduong;
 
 import java.io.IOException;
+import java.util.Enumeration;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebFilter;
@@ -18,5 +19,10 @@ public class ServletRequest extends HttpServlet {
 		req.getContextPath();
 		System.out.println(req.getServerName());
 		System.out.println(req.getServletPath());
+		Enumeration<String> keys = req.getHeaderNames();
+		while(keys.hasMoreElements()) {
+			String key = keys.nextElement();
+			System.out.println(key + " : " + req.getHeader(key));
+		}
 	}
 }
