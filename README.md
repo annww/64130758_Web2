@@ -1,6 +1,6 @@
 # Web 2 Development
 ## 💫 About Me:
-
+<img src="aboutme_img">
 Name: Hong Duong <br/>
 DOB: 11/10/2004 <br/>
 Phone: 0903573201<br/>
