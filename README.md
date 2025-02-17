@@ -1,6 +1,6 @@
 # Web 2 Development
 ## 💫 About Me:
-<img src="[aboutme_img](https://github.com/user-attachments/assets/ef8febd2-d1f5-47bd-9895-b3390d0a07a2)">
+<img src="https://github.com/user-attachments/assets/ef8febd2-d1f5-47bd-9895-b3390d0a07a2" width="250"> <br/>
 Name: Hong Duong <br/>
 DOB: 11/10/2004 <br/>
 Phone: 0903573201<br/>
