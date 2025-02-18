@@ -10,5 +10,15 @@
 <body>
 <h1> Hello JSP - 64CNTTCLC</h1>
 <%= new Date().toString()%>
+<%
+int x;
+int y;
+x = 10;
+y = x + 11;
+%>
+<hr>
+<% out.print(y); %>
+<hr>
+<%= y %>
 </body>
 </html>
