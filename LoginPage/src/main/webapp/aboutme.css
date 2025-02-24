@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/* Thiết lập chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #fdd5df, #dae8ff); /* Hồng pastel -> Xanh pastel */
+    text-align: center;
+}
+
+/* Container chính */
+.container {
+    position: relative;
+    width: fit-content;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Hiệu ứng xuất hiện */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ảnh đại diện */
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 26px;
+    color: #6c5b7b; /* Màu tím pastel nhẹ */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Thông tin cá nhân */
+p {
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-bottom: 8px;
+}
+
+/* Liên kết email & số điện thoại */
+a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mạng xã hội */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    font-size: 30px;
+    color: #6c5b7b;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #ff6f61;
+    transform: scale(1.2);
+}
