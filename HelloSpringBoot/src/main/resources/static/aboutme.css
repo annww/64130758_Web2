@@ -64,6 +64,12 @@ h1 {
     margin-bottom: 10px;
     font-weight: bold;
 }
+h2{
+	font-size: 20px;
+    color: #6c5b7b; /* Màu tím pastel nhẹ */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
 
 /* Thông tin cá nhân */
 p {
