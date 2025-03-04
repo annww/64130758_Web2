@@ -6,10 +6,13 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class stringmvccontroller {
-	@RequestMapping("/display")
-	public ModelAndView getPage() {
-		ModelAndView modelAndView = new ModelAndView();
-		m.setViewName("welcome");
-		return m;
+	@RequestMapping("/")
+	public String SpringMVC() {
+		return "welcome";
 	}
+//	public ModelAndView getPage() {
+//		ModelAndView modelAndView = new ModelAndView();
+//		m.setViewName("welcome");
+//		return m;
+//	}
 }
