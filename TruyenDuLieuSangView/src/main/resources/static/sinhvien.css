@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/* Thiết lập chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #fdd5df, #dae8ff); ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: linear-gradient(135deg, #fdd5df, #dae8ff); ;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            width: 320px;
+            border: 2px solid #f3bac3;
+        }
+        h1 {
+            color: #c85a7c;
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+        .info {
+            display: flex;
+            font-size: 18px;
+            margin: 5px 0;
+            color: #5a3c45;
+        }
+        .label {
+            font-weight: bold;
+            color: #a44e6a;
+        }
+        /* Hiệu ứng xuất hiện */
+	@keyframes fadeIn {
+	    from {
+	        opacity: 0;
+	        transform: translateY(-20px);
+	    }
+	    to {
+	        opacity: 1;
+	        transform: translateY(0);
+	    }
+	}

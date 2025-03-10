@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sinh viên</title>
+    <html xmlns:th="http://www.thymeleaf.org">
+    <link rel='stylesheet' href='sinhvien.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-<h1>Thông tin sinh viên</h1>
-<p>Họ tên: </p>
-<p th:text = "${HoTen}"></p>
-<p>Năm sinh: </p>
-<p th:text = "${NamSinh}"></p>
-<p>Giới tính: </p>
-<p th:text = "${GioiTinh}"></p>
+    <div class="container">
+        <h1>Thông tin sinh viên</h1>
+        <div class="info"><span class="label">Họ tên:</span> <span th:text="${HoTen}"></span></div>
+        <div class="info"><span class="label">Năm sinh:</span> <span th:text="${NamSinh}"></span></div>
+        <div class="info"><span class="label">Giới tính:</span> <span th:text="${GioiTinh}"></span></div>
+    </div>
 </body>
 </html>
