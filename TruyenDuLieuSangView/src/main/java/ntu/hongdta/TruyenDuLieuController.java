@@ -11,6 +11,8 @@ public class TruyenDuLieuController {
 	@RequestMapping("/truyendulieu")
 	public String sinhVien(ModelMap model) {
 		model.addAttribute("HoTen","Duong Thi Anh Hong");
+		model.addAttribute("NamSinh","2004");
+		model.addAttribute("GioiTinh","Nu");
 		return "sinhVien";
 		
 	}
