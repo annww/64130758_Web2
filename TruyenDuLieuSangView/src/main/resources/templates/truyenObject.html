@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sinh viên</title>
+    <html xmlns:th="http://www.thymeleaf.org">
+    <link rel='stylesheet' href='truyenObject.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <h2>Danh Sách Sinh Viên</h2>
+    <table border="1">
+    <tr>
+        <th>MSSV</th>
+        <th>Họ tên</th>
+        <th>Giới tính</th>
+        <th>Năm sinh</th>
+    </tr>
+    <tr th:each="sv : ${danhSachSV}">
+        <td th:text="${sv.mssv}"></td>
+        <td th:text="${sv.hoTen}"></td>
+        <td th:text="${sv.gioiTinh}"></td>
+        <td th:text="${sv.namSinh}"></td>
+    </tr>
+</table>
+
+</body>
+</html>

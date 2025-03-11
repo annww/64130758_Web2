@@ -1,4 +1,4 @@
-package ntu.hongdta;
+package ntu.hongdta.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -10,11 +10,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class TruyenDuLieuController {
 	@RequestMapping("/truyendulieu")
 	public String sinhVien(ModelMap model) {
-		model.addAttribute("HoTen","Duong Thi Anh Hong");
-		model.addAttribute("NamSinh","2004");
-		model.addAttribute("GioiTinh","Nu");
+		model.addAttribute("hoTen","Duong Thi Anh Hong");
+		model.addAttribute("namSinh","2004");
+		model.addAttribute("gioiTinh","Nu");
 		return "sinhVien";
-		
 	}
-	
 }
