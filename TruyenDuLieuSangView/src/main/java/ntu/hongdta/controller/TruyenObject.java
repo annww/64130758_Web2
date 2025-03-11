@@ -10,7 +10,13 @@ import ntu.hongdta.model.SinhVien;
 
 @Controller
 public class TruyenObject {
-    @GetMapping("/truyenObject")
+	@GetMapping("/truyenObject")
+	public String SinhVien(ModelMap model) {
+		SinhVien sv = new SinhVien("SV1", "Duong Thi Anh Hong", "Nu", 2004);
+		model.addAttribute("sinhVien",sv);
+		return "truyenObject";
+	}
+    @GetMapping("/truyendsObject")
     public String danhSachSinhVien(ModelMap model) {
         ArrayList<SinhVien> danhSachSV = new ArrayList<>(Arrays.asList(
             new SinhVien("SV001", "Duong Thi Anh Hong", "Nu", 2004),
@@ -19,6 +25,6 @@ public class TruyenObject {
         ));
         model.addAttribute("danhSachSV", danhSachSV);
 
-        return "truyenObject";
+        return "truyendsObject";
     }
 }
