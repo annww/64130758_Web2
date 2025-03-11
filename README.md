@@ -41,9 +41,7 @@
 |:--------------|:----------------|
 |<img src="https://github.com/user-attachments/assets/394b41b1-cf30-4719-80e0-0da226b1ea9c" width="600"> |<img src="https://github.com/user-attachments/assets/bfd93c49-2879-4de2-8a26-248ec8b39f5c" width="600">|
 
-## Bài tập SpringBoot 
-<img src="https://github.com/user-attachments/assets/809f7454-84e3-4373-9c0b-aabe6c429f58" width= "600"> <br/>
-
-## Bài tập truyền Object dạng list
-<img src="https://github.com/user-attachments/assets/854f9bef-1ff8-4c59-b433-d8bf48acdc22" width= "600"> <br/>
+|Bài tập SpringBoot |Bài tập truyền Object dạng list|
+|:--------------|:----------------|
+|<img src="https://github.com/user-attachments/assets/809f7454-84e3-4373-9c0b-aabe6c429f58" width= "600">|<img src="https://github.com/user-attachments/assets/854f9bef-1ff8-4c59-b433-d8bf48acdc22" width= "600">|
 
