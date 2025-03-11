@@ -17,11 +17,11 @@
         <th>Giới tính</th>
         <th>Năm sinh</th>
     </tr>
-    <tr th:each="sv : ${sinhVien}">
-        <td th:text="${sinhVien.mssv}"></td>
-        <td th:text="${sinhVien.hoTen}"></td>
-        <td th:text="${sinhVien.gioiTinh}"></td>
-        <td th:text="${sinhVien.namSinh}"></td>
+    <tr th:object="${sinhVien}">
+        <td th:text="*{mssv}"></td>
+        <td th:text="*{hoTen}"></td>
+        <td th:text="*{gioiTinh}"></td>
+        <td th:text="*{namSinh}"></td>
     </tr>
 </table>
 
