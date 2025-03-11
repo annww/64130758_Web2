@@ -13,7 +13,6 @@ public class SinhVien {
         this.namSinh = namSinh;
     }
 
-    // Getter & Setter
     public String getMssv() {
         return mssv;
     }

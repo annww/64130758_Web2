@@ -19,9 +19,9 @@ public class TruyenObject {
     @GetMapping("/truyendsObject")
     public String danhSachSinhVien(ModelMap model) {
         ArrayList<SinhVien> danhSachSV = new ArrayList<>(Arrays.asList(
-            new SinhVien("SV001", "Duong Thi Anh Hong", "Nu", 2004),
+            new SinhVien("SV001", "Dương Thị Ánh Hồng", "Nữ", 2004),
             new SinhVien("SV002", "Vi An", "Nữ", 2001),
-            new SinhVien("SV003", "Anh Duong", "Nu", 1999)
+            new SinhVien("SV003", "Ánh Dương", "Nữ", 1999)
         ));
         model.addAttribute("danhSachSV", danhSachSV);
 
