@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import ch.qos.logback.core.model.Model;
-import ntu.hongdta.service.BMIService;
+import ntu.hongdta.service.*;
 
 @Controller
 public class BMIController {

@@ -8,7 +8,8 @@ public class BMIService {
 		if(height<= 0 || weight <= 0) {
 			return 0;
 		}
-		else return weight/ (height*height);
+		double bmi = weight/(height*height);
+		return Math.round(bmi*100.0)/100.0;
 	}
 	
 	public String getBMICategory(double bmi) {
