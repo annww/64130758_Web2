@@ -30,11 +30,11 @@ public class LoginController {
 		
 		if(userAccount.authenticate(id, pass)) {
 			modelAndView.setViewName("home");
-			modelAndView.addObject("message","Login thanh cong");
+			modelAndView.addObject("message","Đăng nhập thành công");
 		}
 		else {
 			modelAndView.setViewName("login");
-			modelAndView.addObject("message","Ten dang nhap hoac tai khoan sai");
+			modelAndView.addObject("message","Tên đăng nhập hoặc tài khoản sai");
 		}
 		return modelAndView;
 	}

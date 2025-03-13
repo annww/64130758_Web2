@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <html xmlns:th="http://www.thymeleaf.org">
+    <link rel='stylesheet' href='aboutme.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
-Day la trang chu
+    <div class="container">
+        <img src="ann.jpg" alt="Ảnh đại diện">
+        <h1>Xin chào! Tôi là Ánh Hồng</h1>
+        <h2 th:text="${mess}"></h2>
+        <p>Tôi đang theo học tại trường Đại học Nha Trang.</p>
+        <p>Hiện tại tôi đang tìm hiểu về HTML, CSS, JavaScript và Java.</p>
+        <p>Hãy kết nối với tôi qua email: <a href="mailto:hong.dta.64cntt@ntu.edu.vn">hong.dta.64cntt@ntu.edu.vn</a></p>
+        <p>hoặc số điện thoại: <a href="tel:+84903573201">0903 573 201</a></p>
+        <div class="social-links">
+    	<a href="https://www.facebook.com/vianunreal" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    	<a href="hhttps://www.instagram.com/ppatete_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</div>
+    </div>
 </body>
 </html>
