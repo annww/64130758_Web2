@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #fdd5df, #dae8ff); /* Hồng pastel -> Xanh pastel */
+    text-align: center;
+}
+
+/* Hiệu ứng mờ kính (Glassmorphism) */
+.container {
+    position: relative;
+    width: 320px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Tiêu đề */
+h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Ô nhập liệu */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.5);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Khi nhập vào input */
+input:focus {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ff5e62;
+    box-shadow: 0px 0px 8px rgba(255, 94, 98, 0.5);
+}
+
+/* Nút bấm */
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hiệu ứng hover cho nút */
+button:hover {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    transform: scale(1.05);
+}
+
+/* Thông báo lỗi */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.noti{
+	margin-top:15px;
+}

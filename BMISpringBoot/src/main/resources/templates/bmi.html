@@ -20,7 +20,7 @@
             <button type="submit">Tính BMI</button>
         </form>
 
-        <div th:if="${bmi}">
+        <div class="noti" th:if="${bmi}">
             <h3>BMI của bạn: <span th:text="${bmi}"></span></h3>
             <p>Phân loại: <span th:text="${category}"></span></p>
         </div>
