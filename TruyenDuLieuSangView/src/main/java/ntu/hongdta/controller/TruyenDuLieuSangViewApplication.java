@@ -3,7 +3,7 @@ package ntu.hongdta.controller;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "ntu.hongdta")
 public class TruyenDuLieuSangViewApplication {
 
 	public static void main(String[] args) {

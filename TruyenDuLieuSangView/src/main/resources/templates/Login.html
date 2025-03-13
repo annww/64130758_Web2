@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<body>
+<div class= "login-container">
+<h2>Đăng nhập</h2>
+<form action="/login" method="post">
+<input type="text" name="id" placeholder="Hãy nhập tên đăng nhập" required>
+<input type="text" name="pass" placeholder="Hãy nhập mật khẩu" required>
+<button type="submit">Đăng nhập</button>
+<p th:if="${message}" th:text="${message}" class ="error"></p>
+</form>
+</div>
+</body>
+</html>
