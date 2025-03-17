@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Tính BMI</title>
-    <html xmlns:th="http://www.thymeleaf.org">
     <link rel="stylesheet" href="bmi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -12,10 +11,17 @@
         <h2>Máy tính BMI</h2>
         <form action="/bmi" method="post">
             <label for="weight">Cân nặng (kg):</label>
-            <input type="number" name="weight" step="0.1" required>
+            <input type="number" id="weight" name="weight" step="0.1" required>
 
             <label for="height">Chiều cao (m):</label>
-            <input type="number" name="height" step="0.01" required>
+            <input type="number" id="height" name="height" step="0.01" required>
+
+            <div class="check">
+                <input class="checkboxx" type="checkbox" id="isAsian" name="isAsian" value="true">
+				<label for="isAsian">Người Châu Á</label>
+				<input type="hidden" name="isAsian" value="false"> <!-- Luôn gửi false nếu không chọn -->
+
+            </div>
 
             <button type="submit">Tính BMI</button>
         </form>
@@ -23,6 +29,10 @@
         <div class="noti" th:if="${bmi}">
             <h3>BMI của bạn: <span th:text="${bmi}"></span></h3>
             <p>Phân loại: <span th:text="${category}"></span></p>
+        </div>
+
+        <div class="img">
+            <img src="bmi.png" alt="BMI Chart">
         </div>
     </div>
 </body>
