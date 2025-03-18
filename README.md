@@ -45,6 +45,7 @@
 |:--------------|:----------------|
 |<img src="https://github.com/user-attachments/assets/809f7454-84e3-4373-9c0b-aabe6c429f58" width= "590">|<img src="https://github.com/user-attachments/assets/854f9bef-1ff8-4c59-b433-d8bf48acdc22" width= "600">|
 
-|Bài tập BMI |
-|:--------------|
-|<img src="https://github.com/user-attachments/assets/a5ef40c7-5dcd-45e5-a2bb-a0784631d775" width= "480">|
+|Bài tập BMI | Bài tập truyền dữ liệu từ Controller sang View|
+|:--------------|:----------------|
+|<img src="https://github.com/user-attachments/assets/a5ef40c7-5dcd-45e5-a2bb-a0784631d775" width= "590">|<img src="https://github.com/user-attachments/assets/2593e664-7ce8-4f5a-a95d-cb512ce403f7" width = "590">|
+
