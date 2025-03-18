@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import ch.qos.logback.core.joran.spi.HttpUtil.RequestMethod;
+
 
 @Controller
 public class BTTongHop {
@@ -15,11 +17,11 @@ public class BTTongHop {
 		return "BTTongHop";
 	}
 	
-	@RequestMapping(value="/return", method= RequestMethod.POST)
+	@RequestMapping(value="/return", method= org.springframework.web.bind.annotation.RequestMethod.POST)
 	public String TDLView(ModelMap m,
 		@RequestParam("name") String name) {
 		m.addAttribute("newhoten", name);
-		return "index";
+		return "BTTongHop";
 		
 	}
 	
