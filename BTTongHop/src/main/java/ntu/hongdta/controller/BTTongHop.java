@@ -22,7 +22,6 @@ public class BTTongHop {
 		@RequestParam("name") String name) {
 		m.addAttribute("newhoten", name);
 		return "BTTongHop";
-		
 	}
 	
 	
