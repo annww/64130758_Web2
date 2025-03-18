@@ -10,9 +10,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class TruyenDuLieuController {
 	@RequestMapping("/truyendulieu")
 	public String sinhVien(ModelMap model) {
-		model.addAttribute("hoTen","Duong Thi Anh Hong");
+		model.addAttribute("hoTen","Dương Thị Ánh Hồng");
 		model.addAttribute("namSinh","2004");
-		model.addAttribute("gioiTinh","Nu");
+		model.addAttribute("gioiTinh","Nữ");
 		return "sinhVien";
 	}
 }
