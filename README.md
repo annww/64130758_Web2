@@ -49,3 +49,8 @@
 |:--------------|:----------------|
 |<img src="https://github.com/user-attachments/assets/a5ef40c7-5dcd-45e5-a2bb-a0784631d775" width= "590">|<img src="https://github.com/user-attachments/assets/2593e664-7ce8-4f5a-a95d-cb512ce403f7" width = "590">|
 
+|Bài tập tổ chức module hóa | View about me |
+|:--------------|:----------------|
+|<img src="https://github.com/user-attachments/assets/49131647-a903-4be5-9935-d2c6cf245134" width= "590">|<img src="https://github.com/user-attachments/assets/01075912-1119-4a05-945c-e942ef31a837" width = "590">|
+
+
