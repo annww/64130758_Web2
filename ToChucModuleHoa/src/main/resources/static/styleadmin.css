@@ -3,19 +3,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #F4EFEB;
     padding: 15px 30px;
+    border-radius: 15px;
 }
 
 body{
 	background-color: #ccc;
-	
 }
-
 
 /* Định dạng cho tên */
 .name {
-    color: white;
+    color: #5A7B90;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
@@ -34,7 +33,7 @@ nav {
 
 /* Định dạng cho các liên kết trong nav */
 nav a {
-    color: white;
+    color: #5A7B90;
     text-decoration: none;
     font-size: 18px;
     padding: 10px 15px;
@@ -44,12 +43,12 @@ nav a {
 
 /* Hiệu ứng khi di chuột vào */
 nav a:hover {
-    background-color: #f0a500;
-    color: #333;
+    background-color: #2F4157;
+    color: #F4EFEB;
 }
 
 /* Định dạng cho trang đang active */
 nav a#active {
-    background-color: #f0a500;
-    color: #333;
+    background-color: #2F4157;
+    color: #F4EFEB;
 }
