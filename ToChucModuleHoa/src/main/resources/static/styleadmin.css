@@ -1,6 +1,15 @@
 /* Định dạng chung cho header */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 .header{
-    display: flex;
+    padding: 10px;
+}
+
+.navbar{
+	display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #F4EFEB;
@@ -51,4 +60,14 @@ nav a:hover {
 nav a#active {
     background-color: #2F4157;
     color: #F4EFEB;
+}
+
+.footer{
+	display: flex;
+	justify-content: center;
+	background-color: #2F4157;
+	color: #F4EFEB;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
 }

@@ -7,18 +7,20 @@
 </head>
 <body>
 	<div th:fragment="header" class="header">
-		<a href ="#" class='name'>
+	<div class="navbar">
+	<a href ="#" class='name'>
 			Anh Hong Duong
 		</a>
 		<nav>
-		<a href='/' id='active'>Home</a>
-		<a href='/'> About me </a>
+		<a href='/'>Home</a>
+		<a href='aboutme'> About me </a>
 		<a href='/'> Menu </a>
 		<a href='/'> Contact </a>
 		</nav>
 	</div>
-	<div th:fragment="footer">
-	
+	</div>
+	<div th:fragment="footer" class="footer">
+		<p>&copy; 2025 Copyright by Anh Hong Duong</p>
 	</div>
 </body>
 </html>

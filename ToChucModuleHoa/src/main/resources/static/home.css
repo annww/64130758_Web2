@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.home{
+	width: 100%;
+    height: calc(100vh - 100px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F4157;
+    color: #F4EFEB;
+    text-align: center;
+    gap:30px;
+    
+}
+
+.text{
+	display: flex;
+    flex-direction: column; /* Xếp text theo cột */
+    align-items: flex-start; /* Căn text về bên trái */
+    justify-content: center; /* Căn giữa text theo chiều dọc */
+    max-width: 50%;
+    padding-top: 6rem;
+}
+.text h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.anh{
+    position: relative;
+    top: 3rem;
+    width: 20vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    justify-content: center;
+}
+pre {
+    text-align: left; /* Căn chữ sang trái */
+    white-space: pre; /* Giữ nguyên khoảng cách */
+    font-family: monospace; /* Đảm bảo font hiển thị đúng */
+    margin-left: 0; /* Xóa khoảng cách bên trái */
+    padding-left: 0; /* Xóa padding bên trái */
+}

@@ -9,9 +9,9 @@ public class ToChucModuleHoaController {
 	public String home() {
 		return "home";
 	}
-	@GetMapping("/about")
+	@GetMapping("/aboutme")
 	public String about() {
-		return "about";
+		return "aboutme";
 	}
 	@GetMapping("/contact")
 	public String contact() {
