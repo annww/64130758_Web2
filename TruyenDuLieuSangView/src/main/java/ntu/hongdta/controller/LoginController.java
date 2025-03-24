@@ -11,7 +11,6 @@ import org.springframework.web.servlet.ModelAndView;
 import jakarta.servlet.http.HttpServletRequest;
 import ntu.hongdta.service.UserAccount;
 
-
 @Controller
 public class LoginController {
 	@Autowired
