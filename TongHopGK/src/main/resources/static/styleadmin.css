@@ -27,11 +27,21 @@ body{
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 /* Hiệu ứng khi di chuột vào tên */
 .name:hover {
     color: #f0a500;
+}
+
+.logo {
+    width: 40px; /* Điều chỉnh kích thước logo */
+    height: 40px;
+    border-radius: 50%; /* Bo tròn logo nếu cần */
+    object-fit: cover; /* Đảm bảo ảnh không méo */
 }
 
 /* Định dạng cho thanh điều hướng */
