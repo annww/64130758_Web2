@@ -9,26 +9,23 @@
 <body>
 	<div th:replace="layoutadmin::header"></div>
 	<div class="parent">
-    <div class="home">
-    <div class="home">
-		<div class="text">
-			<h1> Welcome to my page!</h1>
-			<pre>
-				⊹⠀ ⠀ ⣀⣤⣤⣤⡀⣀⣤⣤⣤⣀ ⠀⠀⠀⠀⠀ ₊ 
-				⠀⠀ ⣼⠋ ⠀⠀ ⠹⠋ ⠀⠀⠀⠙⣧
-				⠀⠀ ⣿ ⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⣿
-				⣠⠶⠛⠻⣷⠞⠛⢶⡄ ⠀⠀⠀⠀⣼⠃
-				⣿ ⠀⠀⠀⠀⠀ ⠀⣿ ⠀⠀ ⣠⠞⠁
-				⠘⣧ ⠀⠀⠀⠀⠀⡼⣧⣴⠞
-				⠀⠈⠻⣦⣀⡴⠟⠁ ⠀⠀⠀⠀⠀⊹
-				₊⠀⠀⠀ ⠉
-	    	</pre>
+	    <div class="home">
+			<div class="text">
+				<h1> Welcome to my page!</h1>
+				<pre>
+					⊹⠀ ⠀ ⣀⣤⣤⣤⡀⣀⣤⣤⣤⣀ ⠀⠀⠀⠀⠀ ₊ 
+					⠀⠀ ⣼⠋ ⠀⠀ ⠹⠋ ⠀⠀⠀⠙⣧
+					⠀⠀ ⣿ ⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⣿
+					⣠⠶⠛⠻⣷⠞⠛⢶⡄ ⠀⠀⠀⠀⣼⠃
+					⣿ ⠀⠀⠀⠀⠀ ⠀⣿ ⠀⠀ ⣠⠞⠁
+					⠘⣧ ⠀⠀⠀⠀⠀⡼⣧⣴⠞
+					⠀⠈⠻⣦⣀⡴⠟⠁ ⠀⠀⠀⠀⠀⊹
+					₊⠀⠀⠀ ⠉
+		    	</pre>
+			</div>
+			<img class="anh" src="ah.jpg" alt="my img">
 		</div>
-		<img class="anh" src="ah.jpg" alt="my img">
-		</div>
-    </div>
-    <div class="div2">
-    <img class="left_img" src="abc.jpg" alt="my img"></div>
+		<div class="right_content" th:replace="layoutadmin::content"></div>
 </div>
 	<div th:replace="layoutadmin::footer"></div>
 

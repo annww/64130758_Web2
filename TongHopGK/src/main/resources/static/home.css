@@ -20,16 +20,6 @@
     gap: 8px;
 }
 
-.div2 {
-    grid-row: span 5 / span 5;
-    grid-column-start: 5;
-    grid-row: span 5 / span 5;
-    grid-column-start: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
 
 .left_img {
     width: 100%; /* Ảnh chiếm toàn bộ chiều rộng của div */
@@ -63,9 +53,10 @@
     justify-content: center;
 }
 pre {
-    text-align: left; /* Căn chữ sang trái */
-    white-space: pre; /* Giữ nguyên khoảng cách */
-    font-family: monospace; /* Đảm bảo font hiển thị đúng */
-    margin-left: 0; /* Xóa khoảng cách bên trái */
-    padding-left: 0; /* Xóa padding bên trái */
+    text-align: left;
+    white-space: pre; 
+    font-family: monospace;
+    margin-left: 0; 
+    padding-left: 0; /
 }
+
