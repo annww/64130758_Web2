@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link href="styleadmin.css" rel="stylesheet">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>Danh sách Sinh viên</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-
+<div th:replace="layoutadmin::header"></div>
+    <h2>Danh sách Sinh viên</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Mã SV</th>
+                <th>Họ tên</th>
+                <th>Tuổi</th>
+                <th>Ngành học</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="sinhVien : ${sinhViens}">
+                <td th:text="${sinhVien.id}"></td>
+                <td th:text="${sinhVien.name}"></td>
+                <td th:text="${sinhVien.age}"></td>
+                <td th:text="${sinhVien.major}"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div th:replace="layoutadmin::footer"></div>
 </body>
 </html>
