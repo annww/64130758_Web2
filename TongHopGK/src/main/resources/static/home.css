@@ -9,8 +9,35 @@
     color: #F4EFEB;
     text-align: center;
     gap:30px;
-    
+    grid-column: span 4 / span 4;
+    grid-row: span 5 / span 5;
+    border-radius: 10px;
 }
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.div2 {
+    grid-row: span 5 / span 5;
+    grid-column-start: 5;
+    grid-row: span 5 / span 5;
+    grid-column-start: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left_img {
+    width: 100%; /* Ảnh chiếm toàn bộ chiều rộng của div */
+    height: 100%; /* Ảnh chiếm toàn bộ chiều cao */
+    object-fit: cover; /* Cắt ảnh để vừa khung mà không méo */
+    border-radius: 10px; /* Bo góc nhẹ cho đẹp hơn */
+}
+        
 
 .text{
 	display: flex;
