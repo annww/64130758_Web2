@@ -9,7 +9,8 @@
 <body>
 <div th:replace="layoutadmin::header"></div>
 <div class="content_addS">
-	<div class="addStudent">
+	<div class="addS_container">
+		<div class="addStudent">
 	<h1>Thêm sinh viên</h1>
 	<form action="/addStudent" method="post" class="form-container">
 		<div class="form-group">
@@ -32,6 +33,8 @@
 		<button class="cancel_btn" type="reset" >Hủy</button>
 	</form>
 	</div>
+	</div>
+	
 	<div th:replace="layoutadmin::content"></div>
 </div>
 <div th:replace="layoutadmin::footer"></div>

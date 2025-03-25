@@ -23,9 +23,9 @@
 
 .text{
 	display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
-    justify-content: center; 
+    flex-direction: column; /* Xếp text theo cột */
+    align-items: flex-start; /* Căn text về bên trái */
+    justify-content: center; /* Căn giữa text theo chiều dọc */
     max-width: 50%;
     padding-top: 6rem;
 }

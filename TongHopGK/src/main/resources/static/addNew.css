@@ -1,1 +1,95 @@
-@charset "UTF-8";
+/* Căn giữa toàn bộ nội dung */
+.content_addS {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    padding-bottom: 10px;
+	height: 100%;
+}
+.addS_container{
+	width:100%;
+	background-color: rgb(47, 65, 87);
+	grid-column: span 4 / span 4;
+    grid-row: span 5 / span 5;
+    border-radius: 10px;
+   	display: flex;
+   	justify-content:center;
+   	align-items: center;
+   	height: calc(100vh - 100px);
+}
+
+.addStudent {
+    padding: 20px 30px;
+    text-align: center;
+    width: 400px;
+    background-color: #f4efeb;
+    
+}
+
+/* Tiêu đề */
+.addStudent h1 {
+    color: #6c5b7b;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Định dạng các input */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    font-size:20px;
+    color: #4a4a4a;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Nút bấm */
+.btn, .cancel_btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #5A7B90;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.btn:hover {
+    background-color: #2F4157;
+}
+
+.cancel_btn {
+    background-color: #FED8A6;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.cancel_btn:hover {
+    background-color: #EDCA85;
+}
+
+.form-group input::placeholder {
+	font-family: "Times New Roman", Times, serif;
+    font-style: italic;  /* Chữ in nghiêng */
+    color: #888;         /* Màu chữ nhạt hơn */
+    font-size: 16px;     /* Đồng nhất cỡ chữ */
+    opacity: 1;          /* Đảm bảo không bị mờ */
+}
