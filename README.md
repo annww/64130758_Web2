@@ -53,4 +53,8 @@
 |:--------------|:----------------|
 |<img src="https://github.com/user-attachments/assets/49131647-a903-4be5-9935-d2c6cf245134" width= "590">|<img src="https://github.com/user-attachments/assets/01075912-1119-4a05-945c-e942ef31a837" width = "590">|
 
+|Bài tập tổng hợp ôn giữa kỳ | |
+|:--------------|:----------------|
+|<img src="https://github.com/user-attachments/assets/75be2c92-df7b-4688-ac5e-0009fd656ae5" width= "590">|<img src="https://github.com/user-attachments/assets/2dc59a19-eb50-4b0c-be87-7c9f0ab04a58" width = "590">|
+|<img src="https://github.com/user-attachments/assets/dc81c19e-41bf-4f6f-9d6c-8a5694c792af" width= "590">|<img src="https://github.com/user-attachments/assets/c7a39481-1e41-4fd6-b131-b6c4891fc8de" width = "590">|
 
