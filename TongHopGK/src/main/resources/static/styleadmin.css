@@ -80,6 +80,7 @@ nav a#active {
     align-items: center;
     background-color: #2F4157;
     color: #F4EFEB;
+    bottom: 0;
 }
 
 
