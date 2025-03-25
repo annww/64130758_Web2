@@ -1,0 +1,87 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4EFEB;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+
+/* Định dạng cho tên */
+.name {
+    color: #5A7B90;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.name:hover {
+    color: #f0a500;
+}
+
+/* Định dạng cho thanh điều hướng */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #5A7B90;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2F4157;
+    color: #F4EFEB;
+}
+
+nav a#active {
+    background-color: #2F4157;
+    color: #F4EFEB;
+}
+
+/* Định dạng danh sách sinh viên */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #2F4157;
+    font-size: 30px;
+}
+
+/* Bảng danh sách sinh viên */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Định dạng tiêu đề bảng */
+thead {
+    background-color: #5A7B90;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 20px;
+}
+
+/* Định dạng từng dòng */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+    transition: 0.3s;
+}
