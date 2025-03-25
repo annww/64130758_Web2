@@ -8,25 +8,30 @@
 </head>
 <body>
 <div th:replace="layoutadmin::header"></div>
-    <h2>Danh sách Sinh viên</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Mã SV</th>
-                <th>Họ tên</th>
-                <th>Tuổi</th>
-                <th>Ngành học</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="sinhVien : ${sinhViens}">
-                <td th:text="${sinhVien.id}"></td>
-                <td th:text="${sinhVien.name}"></td>
-                <td th:text="${sinhVien.age}"></td>
-                <td th:text="${sinhVien.major}"></td>
-            </tr>
-        </tbody>
-    </table>
-    <div th:replace="layoutadmin::footer"></div>
+<div class="content_list">
+	<div class="table_sinhvien">
+		<h2>Danh sách Sinh viên</h2>
+		    <table>
+		        <thead>
+		            <tr>
+		                <th>Mã SV</th>
+		                <th>Họ tên</th>
+		                <th>Tuổi</th>
+		                <th>Ngành học</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <tr th:each="sinhVien : ${sinhViens}">
+		                <td th:text="${sinhVien.id}"></td>
+		                <td th:text="${sinhVien.name}"></td>
+		                <td th:text="${sinhVien.age}"></td>
+		                <td th:text="${sinhVien.major}"></td>
+		            </tr>
+		        </tbody>
+		    </table>
+	</div>
+	<div th:replace="layoutadmin::content"></div>
+</div>
+<div th:replace="layoutadmin::footer"></div>
 </body>
 </html>

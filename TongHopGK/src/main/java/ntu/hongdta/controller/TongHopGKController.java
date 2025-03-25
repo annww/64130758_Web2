@@ -1,6 +1,8 @@
 package ntu.hongdta.controller;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
@@ -25,14 +27,18 @@ public class TongHopGKController {
 		return "about";
 	}
 	
-	@GetMapping("/list")
-	public String list(Model model) {
-		List<SinhVien> sinhViens = new ArrayList<>();
+	ArrayList<SinhVien> sinhViens = new ArrayList<>();
+	
+	public TongHopGKController() {
 		sinhViens.add(new SinhVien("SV1","Dương Thị Ánh Hồng",20,"CNTT"));
 		sinhViens.add(new SinhVien("SV2", "Vi An", 19, "Kinh tế"));
 		sinhViens.add(new SinhVien("SV3", "Mộc Miên", 19, "Kinh tế"));
 		sinhViens.add(new SinhVien("SV4", "An Tuệ", 18, "Ngân hàng"));
-		
+	}
+	
+	
+	@GetMapping("/list")
+	public String list(Model model) {		
 		model.addAttribute("sinhViens", sinhViens);
 		return "list";
 	}
