@@ -9,7 +9,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.springframework.ui.Model;
 import ntu.hongdta.model.SinhVien;
@@ -48,5 +51,13 @@ public class TongHopGKController {
 		return "addNew";
 	}
 
-	
+	@PostMapping("addStudent")
+	public String addStudent(@RequestParam("id") String id, 
+			@RequestParam("name") String name,
+			@RequestParam("age") int age,
+			@RequestParam("major") String major){
+		SinhVien newStudent = new SinhVien(id, name, age, major);
+		sinhViens.add(newStudent);
+		return "redirect:/list";
+	}
 }
