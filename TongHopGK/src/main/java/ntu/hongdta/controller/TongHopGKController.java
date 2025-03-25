@@ -51,7 +51,7 @@ public class TongHopGKController {
 		return "addNew";
 	}
 
-	@PostMapping("addStudent")
+	@PostMapping("/addStudent")
 	public String addStudent(@RequestParam("id") String id, 
 			@RequestParam("name") String name,
 			@RequestParam("age") int age,

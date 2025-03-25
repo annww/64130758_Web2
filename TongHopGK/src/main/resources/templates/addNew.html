@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Add Student</title>
+<link href="styleadmin.css" rel="stylesheet">
+<link href="addNew.css" rel="stylesheet">
+</head>
+<body>
+<div th:replace="layoutadmin::header"></div>
+<div class="content_addS">
+	<div class="addStudent">
+	<h1>Thêm sinh viên</h1>
+	<form action="/addStudent" method="post" class="form-container">
+		<div class="form-group">
+			<label for="id">Mã số sinh viên: </label>
+			<input type="text" name="id" placeholder="Nhập mã số sinh viên..." required>
+		</div>
+		<div class="form-group">
+			<label for="name">Nhập họ tên sinh viên: </label>
+			<input type="text" name="name" placeholder="Nhập tên sinh viên..." required>
+		</div>
+		<div class="form-group">
+			<label for="age">Nhập tuổi sinh viên: </label>
+			<input type="text" name="age" placeholder="Nhập tuổi sinh viên..." required>
+		</div>
+			<div class="form-group">
+			<label for="major">Nhập chuyên ngành của sinh viên: </label>
+			<input type="text" name="major" placeholder="Nhập chuyên ngành sinh viên..." required>
+		</div>
+		<button class="btn" type="submit">Lưu</button>
+		<button class="cancel_btn" type="reset" >Hủy</button>
+	</form>
+	</div>
+	<div th:replace="layoutadmin::content"></div>
+</div>
+<div th:replace="layoutadmin::footer"></div>
+</body>
+</html>
