@@ -85,8 +85,6 @@ nav a#active {
 .content{
 	grid-row: span 5 / span 5;
     grid-column-start: 5;
-    grid-row: span 5 / span 5;
-    grid-column-start: 5;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>About</title>
@@ -9,6 +9,7 @@
 </head>
 <body>
 <div th:replace="layoutadmin::header"></div>
+<div class="content_about">
 <div class= "me">
 <div class="container_about">
         <img src="ah.jpg" alt="Ảnh đại diện">
@@ -20,8 +21,12 @@
         <div class="social-links">
     	<a href="https://www.facebook.com/vianunreal" target="_blank"><i class="fa-brands fa-facebook"></i></a>
     	<a href="https://www.instagram.com/ppatete_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-</div></div>
+		</div>
 </div>
+</div>
+<div class="right_content" th:replace="layoutadmin::content"></div>
+</div>
+
 
 <div th:replace="layoutadmin::footer"></div>
 </body>

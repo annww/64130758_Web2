@@ -20,20 +20,11 @@
     gap: 8px;
 }
 
-
-.left_img {
-    width: 100%; /* Ảnh chiếm toàn bộ chiều rộng của div */
-    height: 100%; /* Ảnh chiếm toàn bộ chiều cao */
-    object-fit: cover; /* Cắt ảnh để vừa khung mà không méo */
-    border-radius: 10px; /* Bo góc nhẹ cho đẹp hơn */
-}
-        
-
 .text{
 	display: flex;
-    flex-direction: column; /* Xếp text theo cột */
-    align-items: flex-start; /* Căn text về bên trái */
-    justify-content: center; /* Căn giữa text theo chiều dọc */
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center; 
     max-width: 50%;
     padding-top: 6rem;
 }
@@ -59,4 +50,3 @@ pre {
     margin-left: 0; 
     padding-left: 0; /
 }
-
