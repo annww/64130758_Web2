@@ -1,0 +1,73 @@
+/* Định dạng chung cho header */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.header{
+    padding: 10px;
+}
+
+.navbar{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4EFEB;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+
+body{
+	background-color: #ccc;
+}
+
+/* Định dạng cho tên */
+.name {
+    color: #5A7B90;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Hiệu ứng khi di chuột vào tên */
+.name:hover {
+    color: #f0a500;
+}
+
+/* Định dạng cho thanh điều hướng */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Định dạng cho các liên kết trong nav */
+nav a {
+    color: #5A7B90;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hiệu ứng khi di chuột vào */
+nav a:hover {
+    background-color: #2F4157;
+    color: #F4EFEB;
+}
+
+/* Định dạng cho trang đang active */
+nav a#active {
+    background-color: #2F4157;
+    color: #F4EFEB;
+}
+
+.footer{
+	display: flex;
+	justify-content: center;
+	background-color: #2F4157;
+	color: #F4EFEB;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}

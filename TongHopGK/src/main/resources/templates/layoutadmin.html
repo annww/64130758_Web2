@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Admin</title>
+<link href="styleadmin.css" rel="stylesheet">
+</head>
+<body>
+	<div th:fragment="header" class="header">
+	<div class="navbar">
+	<a href ="#" class='name'>
+			Anh Hong Duong
+		</a>
+		<nav>
+		<a href='/'>Home</a>
+		<a href='about'> About </a>
+		<a href='#'> List </a>
+		<a href='#'> Add New </a>
+		</nav>
+	</div>
+	</div>
+	<div th:fragment="footer" class="footer">
+		<p>&copy; 2025 Copyright by Anh Hong Duong</p>
+	</div>
+</body>
+</html>
