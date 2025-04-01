@@ -89,7 +89,7 @@ nav a#active {
 	padding-top: 20px;
 }
 .container_navb {
-  max-width: 100%;
+  width: 200px;
   margin: 0 auto;   
   padding: 30px;   
   background-color: #f8f9fa;

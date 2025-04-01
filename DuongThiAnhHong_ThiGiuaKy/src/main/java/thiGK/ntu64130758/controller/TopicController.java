@@ -9,13 +9,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import thiGK.ntu64130758.model.TopicModel;
 
-@Controller
 @RequestMapping("/topic")
-public class DuongThiAnhHong_ThiGiuaKyController {
-
+public class TopicController {
     private List<TopicModel> topics = new ArrayList<>();
 
-    public DuongThiAnhHong_ThiGiuaKyController() {
+    public TopicController() {
         topics.add(new TopicModel("1", "Topic 1", "Supervisor A", "Research"));
         topics.add(new TopicModel("2", "Topic 2", "Supervisor B", "Development"));
         topics.add(new TopicModel("3", "Topic 3", "Supervisor C", "Analysis"));
