@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
@@ -8,18 +8,14 @@
 </head>
 <body>
 <div th:fragment="header" class="header">
-	<div>
-		<img src="img/logokhoa.png">
-		<div class= "dasdboard">
-			<nav class="nav flex-column">
-			  	<a class="nav-link active" aria-current="page" href="#">Active</a>
-			  	<a class="nav-link" href="#">Link</a>
-			  	<a class="nav-link" href="#">Link</a>
-			  	<a class="nav-link disabled" aria-disabled="true">Disabled</a>
-			</nav>
-		</div>	
+	<div class="left_content">
+		<img src="img/logokhoa.png" alt="Logo" class="logo">
 	</div>
-	<div>Duong Thi Anh Hong </div>
+	<div class="right_content">
+		<nav>
+			<a>Duong Thi Anh Hong</a>
+		</nav>
+	</div>
 </div>
 
 <div th:fragment="footer" class="footer">
