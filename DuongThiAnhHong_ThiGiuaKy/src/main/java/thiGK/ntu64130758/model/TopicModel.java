@@ -2,15 +2,15 @@ package thiGK.ntu64130758.model;
 
 public class TopicModel {
     private String id;
-    private String name;
-    private String groupID;
+    private String topicName;
+    private String supervisorID;
+    private String topicType;
 
-    public TopicModel() {}
-
-    public TopicModel(String id, String name, String groupID) {
+    public TopicModel(String id, String topicName, String supervisorID, String topicType) {
         this.id = id;
-        this.name = name;
-        this.groupID = groupID;
+        this.topicName = topicName;
+        this.supervisorID = supervisorID;
+        this.topicType = topicType;
     }
 
     public String getId() {
@@ -21,20 +21,27 @@ public class TopicModel {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTopicName() {
+        return topicName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTopicName(String topicName) {
+        this.topicName = topicName;
     }
 
-    public String getGroupID() {
-        return groupID;
+    public String getSupervisorID() {
+        return supervisorID;
     }
 
-    public void setGroupID(String groupID) {
-        this.groupID = groupID;
+    public void setSupervisorID(String supervisorID) {
+        this.supervisorID = supervisorID;
     }
 
+    public String getTopicType() {
+        return topicType;
+    }
+
+    public void setTopicType(String topicType) {
+        this.topicType = topicType;
+    }
 }

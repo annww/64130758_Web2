@@ -17,6 +17,25 @@
 		</nav>
 	</div>
 </div>
+<div th:fragment="navs" class="container">
+  <div class="d-flex justify-content-center">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Topic-List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Topic-AddNew</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Student-List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Student-AddNew</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
 <div th:fragment="footer" class="footer">
 		<p>&copy; 2025 by Anh Hong - FIT.NTU</p>

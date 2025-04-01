@@ -79,3 +79,13 @@ nav a#active {
     background-color: #fdf3d6;
     color: #A6171C;
 }
+/* Nếu bạn muốn căn giữa lại nav trong container */
+.container {
+  max-width: 500px; /* Điều chỉnh chiều rộng nếu cần */
+  margin: 0 auto; /* Để căn giữa container */
+  padding: 20px;
+}
+
+.nav {
+  width: 100%; /* Để nav chiếm toàn bộ chiều rộng của container */
+}
