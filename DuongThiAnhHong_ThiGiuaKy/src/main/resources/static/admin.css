@@ -85,6 +85,9 @@ nav a#active {
   width: 100%; 
 }
 
+.container_content{
+	padding-top: 20px;
+}
 .container_navb {
   max-width: 100%;
   margin: 0 auto;   
