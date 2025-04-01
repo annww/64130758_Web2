@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div th:replace="admin::header"></div>
+    <div class="container_content">
+        <div th:replace="admin::navs"></div>
+        <div class="content">
+            <h3>Danh sách các Topic</h3>
+            <h4>Thêm Topic Mới</h4>
+            <form th:action="@{/topics/add}" method="post">
+                <div class="form-group">
+                    <label for="id">ID</label>
+                    <input type="text" id="id" name="id" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="topicName">Topic Name</label>
+                    <input type="text" id="topicName" name="topicName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="supervisorID">Supervisor ID</label>
+                    <input type="text" id="supervisorID" name="supervisorID" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="topicType">Topic Type</label>
+                    <input type="text" id="topicType" name="topicType" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add New Topic</button>
+            </form>
+
+            <table class="table mt-4">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Topic Name</th>
+                        <th>Supervisor ID</th>
+                        <th>Topic Type</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="topic : ${topics}">
+                        <td th:text="${topic.id}"></td>
+                        <td th:text="${topic.topicName}"></td>
+                        <td th:text="${topic.supervisorID}"></td>
+                        <td th:text="${topic.topicType}"></td>
+                        <td>
+                            <a href="#" class="btn btn-info">View</a>
+                            <a href="#" class="btn btn-warning">Edit</a>
+                            <a href="#" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div th:replace="admin::footer"></div>
+</body>
+</html>
