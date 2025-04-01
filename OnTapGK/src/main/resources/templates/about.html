@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link href="admin.css" rel="stylesheet">
+<link href="about.css" rel="stylesheet">
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Custom Google font-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+<!-- Bootstrap icons-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+	<!-- Header -->
+	<div th:replace="admin::header"></div>
+	<!-- Content -->
+	<div class="container_about">
+    <div class="left_content d-flex align-items-center">
+        <header class="py-5">
+            <div class="container px-5 pb-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                            <div class="text-uppercase">Con bò &middot; con báo &middot; con ngợm</div>
+                        </div>
+                        <div class="fs-3 fw-light text-muted">Tell me about your "báo thủ"</div>
+                        <h2 class="display-3 fw-bolder mb-5">
+                            <span class="text-gradient d-inline">Chiikawa</span>
+                        </h2>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-md-start mb-3">
+                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
+                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <img class="profile-img" src="img/chiikawapng.webp" alt="..." />
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div th:replace="admin::content"></div>
+</div>
+<div th:replace="admin::footer"></div>
+
+</body>
+</html>

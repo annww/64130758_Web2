@@ -1,0 +1,33 @@
+@charset "UTF-8";
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.container_about{
+	display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    padding: 0px 15px 15px 15px;
+}
+.left_content{
+	gap: 60px;
+    grid-column: span 4 / span 4;
+    grid-row: span 5 / span 5;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.text-uppercase{
+	color: uppercase !important;
+	box-sizing: border-box;
+}
+
+.badge{
+	background: #1e30f3;
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+}
+
+.d-inline{
+	font-size: 46px;
+}

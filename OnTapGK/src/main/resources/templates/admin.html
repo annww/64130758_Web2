@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>FragmentAdmin</title>
+<link href="admin.css" rel="stylesheet">
+</head>
+<body>
+<div th:fragment="header" class="header">
+	<div class="navbar">
+	<a href ="#" class='name'>
+	<img src="img/chiikawa.jpg" alt="Logo" class="logo">
+			Chiikawa
+		</a>
+		<nav>
+		<a href='/'>Home</a>
+		<a href='about'> About </a>
+		<a href='list'> List </a>
+		<a href='addnew'> Add New </a>
+		</nav>
+	</div>
+	</div>
+	<div th:fragment="content" class="content">
+		<img src="img/waaa.jpg" alt="anh">
+	</div>
+	<div th:fragment="footer" class="footer">
+		<p>&copy; 2025 Copyright by Anh Hong Duong</p>
+	</div>
+</body>
+</html>

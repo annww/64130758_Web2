@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fdf3d6;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Định dạng tiêu đề bảng */
+thead {
+    background-color: #5A7B90;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 20px;
+}
+
+/* Định dạng từng dòng */
+tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+tbody tr:hover {
+    background-color: #ccc;
+    transition: 0.3s;
+}
+
+.container_list{
+	display:grid;
+	grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    padding-bottom: 5px;
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+.table_sinhvien{
+	grid-column: span 4 / span 4;
+    grid-row: span 5 / span 5;
+    border-radius: 10px;
+    background-color: #F4EFEB;
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column
+}

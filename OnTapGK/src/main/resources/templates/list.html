@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link href="admin.css" rel="stylesheet">
+<link href="list.css" rel="stylesheet">
+</head>
+<body>
+	<div th:replace="admin::header"></div>
+	<div class="container_list">
+	<div class="table_sinhvien">
+	<div><h2>Danh sách Sinh viên</h2></div>
+		    <table>
+		        <thead>
+		            <tr>
+		                <th>Mã SV</th>
+		                <th>Họ tên</th>
+		                <th>Ngày tháng năm sinh</th>
+		                <th>Ngành học</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <tr th:each="sinhVien : ${sinhViens}">
+		                <td th:text="${sinhVien.id}"></td>
+		                <td th:text="${sinhVien.name}"></td>
+		                <td th:text="${#temporals.format(sinhVien.dob, 'dd/MM/yyyy')}"></td>
+		                <td th:text="${sinhVien.major}"></td>
+		            </tr>
+		        </tbody>
+		    </table>
+	</div>
+	<div th:replace="admin::content"></div>
+	</div>
+</body>
+</html>
