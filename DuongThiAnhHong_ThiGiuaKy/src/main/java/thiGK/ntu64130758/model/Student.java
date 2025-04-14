@@ -1,57 +1,41 @@
 package thiGK.ntu64130758.model;
 
 public class Student {
-    private String id;
-    private String topicName;
-    private String topicDescription;
-    private String supervisorId;
-    private String topicType;
+    private int id;
+    private String name;
+    private String groupId;
 
-    public Student(String id, String topicName, String topicDescription, String supervisorId, String topicType) {
-        this.id = id;
-        this.topicName = topicName;
-        this.topicDescription = topicDescription;
-        this.supervisorId = supervisorId;
-        this.topicType = topicType;
+    public Student() {
     }
 
-    public String getId() {
+    public Student(int id, String name, String groupId) {
+        this.id = id;
+        this.name = name;
+        this.groupId = groupId;
+    }
+
+    // Getters and Setters
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getTopicName() {
-        return topicName;
+    public String getName() {
+        return name;
     }
 
-    public void setTopicName(String topicName) {
-        this.topicName = topicName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getTopicDescription() {
-        return topicDescription;
+    public String getGroupId() {
+        return groupId;
     }
 
-    public void setTopicDescription(String topicDescription) {
-        this.topicDescription = topicDescription;
-    }
-
-    public String getSupervisorId() {
-        return supervisorId;
-    }
-
-    public void setSupervisorId(String supervisorId) {
-        this.supervisorId = supervisorId;
-    }
-
-    public String getTopicType() {
-        return topicType;
-    }
-
-    public void setTopicType(String topicType) {
-        this.topicType = topicType;
+    public void setGroupId(String groupId) {
+        this.groupId = groupId;
     }
 }

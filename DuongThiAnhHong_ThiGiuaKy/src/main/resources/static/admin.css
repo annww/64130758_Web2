@@ -94,7 +94,7 @@ nav a#active {
   padding: 30px;   
   background-color: #f8f9fa;
   border-radius: 10px;
- 
+  height: 100%;
 }
 
 .d-flex {
@@ -134,4 +134,3 @@ nav a#active {
   pointer-events: none; 
   background-color: transparent; 
 }
-

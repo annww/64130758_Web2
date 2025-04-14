@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết Topic</title>
+    <link th:href="@{/admin.css}" rel="stylesheet">
+    <link th:href="@{/index.css}" rel="stylesheet">
+    <link th:href="@{/topics.css}" rel="stylesheet">
+</head>
+<body>
+    <div th:replace="admin::header"></div>
+    <div class="container_content">
+        <div th:replace="admin::navs"></div>
+        <div class="topics">
+            <h2>Danh sách các đề tài</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên</th>
+                <th>Mô tả</th>
+                <th>Supervisor</th>
+                <th>Loại</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="topic : ${dsTopics}">
+                <td th:text="${topic.id}"></td>
+                <td th:text="${topic.topicName}"></td>
+                <td th:text="${topic.topicDescription}"></td>
+                <td th:text="${topic.supervisorId}"></td>
+                <td th:text="${topic.topicType}"></td>
+                <td>
+                    <a th:href="@{'/topic/view/' + ${topic.id}}">Xem</a> |
+                    <a th:href="@{'/topic/delete/' + ${topic.id}}">Sửa</a>|
+                    <a th:href="@{'/topic/delete/' + ${topic.id}}">Xóa</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a th:href="@{/topic/new}">Thêm đề tài mới</a>
+        </div>
+    </div>
+    <div th:replace="admin::footer"></div>
+</body>
+</html>

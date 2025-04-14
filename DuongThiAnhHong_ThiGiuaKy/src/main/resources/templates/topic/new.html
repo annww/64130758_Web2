@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link th:href=@{/admin.css} rel="stylesheet">
+    <link th:href=@{/index.css} rel="stylesheet">
+    <link th:href=@{/topics.css} rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div th:replace="admin::header"></div>
+    <div class="container_content">
+        <div th:replace="admin::navs"></div>
+        <div class= "topics">
+        	<form action="/topic/add" method="post">
+			    <label>Topic Name:</label><br>
+			    <input type="text" name="topicName"><br>
+			
+			    <label>Description:</label><br>
+			    <input type="text" name="topicDescription"><br>
+			
+			    <label>Supervisor ID:</label><br>
+			    <input type="number" name="supervisorId"><br>
+			
+			    <label>Topic Type:</label><br>
+			    <input type="text" name="topicType"><br><br>
+			
+			    <button type="submit">Add Topic</button>
+			</form>
+        </div>
+    </div>
+    <div th:replace="admin::footer"></div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
