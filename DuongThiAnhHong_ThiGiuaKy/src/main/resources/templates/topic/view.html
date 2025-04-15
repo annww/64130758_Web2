@@ -15,12 +15,12 @@
         <div th:replace="admin::navs"></div>
         <div class= "topics">
         	<h2>Chi tiết Topic</h2>
-			<p><strong>ID:</strong> ${topic.id}</p>
-			<p><strong>Tên Topic:</strong> ${topic.topicName}</p>
-			<p><strong>Mô tả:</strong> ${topic.topicDescription}</p>
-			<p><strong>Supervisor ID:</strong> ${topic.supervisorId}</p>
-			<p><strong>Loại:</strong> ${topic.topicType}</p>
-			<a href="/topic/all">Quay lại danh sách</a>
+			<p><strong>ID:</strong> <span th:text="${topic.id}"></span></p>
+			<p><strong>Tên Topic:</strong> <span th:text="${topic.topicName}"></span></p>
+			<p><strong>Mô tả:</strong> <span th:text="${topic.topicDescription}"></span></p>
+			<p><strong>Supervisor ID:</strong> <span th:text="${topic.supervisorId}"></span></p>
+			<p><strong>Loại:</strong> <span th:text="${topic.topicType}"></span></p>
+			<a th:href="@{/topic/all}">Quay lại danh sách</a>
         </div>
     </div>
     <div th:replace="admin::footer"></div>
