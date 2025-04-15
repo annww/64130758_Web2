@@ -33,7 +33,7 @@
                 <td th:text="${topic.topicType}"></td>
                 <td>
                     <a th:href="@{'/topic/view/' + ${topic.id}}">Xem</a> |
-                    <a th:href="@{'/topic/delete/' + ${topic.id}}">Sửa</a>|
+                    <a th:href="@{'/topic/new' + ${topic.id}}">Sửa</a>|
                     <a th:href="@{'/topic/delete/' + ${topic.id}}">Xóa</a>
                 </td>
             </tr>

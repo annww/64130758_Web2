@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import thiGK.ntu64130758.model.Student;
@@ -69,4 +70,40 @@ public class HomeController {
 		dsTopics.removeIf(topic -> topic.getId() == id);
 		return "redirect:/topic/all";
 	}
+	
+	@GetMapping("/student/all")
+	public String StudentList(ModelMap m) {
+		m.addAttribute("dsStudents", dsStudents);
+		return "student/all";
+	}
+	
+	@GetMapping("/student/new")
+	public String AddNewStudent() {
+		return "student/new";
+	}
+	
+	@PostMapping("/student/add")
+	public String addStudent(@RequestParam("name") String name,
+			@RequestParam("groupId") String groupId) {
+		int newId = dsStudents.size() + 1;
+		Student newStudent = new Student(newId, name, groupId);
+		dsStudents.add(newStudent);
+		return "redirect:/post/all";
+	}
+	
+	@GetMapping("/student/view/{id}")
+	public String viewStudent(@PathVariable("id") int id, ModelMap model) {
+		for(Student student : dsStudents) {
+			if(student.getId() == id) {
+				model.addAttribute("student", student);
+				break;
+			}
+		}
+	}
+	
+	@GetMapping("/student/delete/{id}")
+	public String deleteStudent(@PathVariable("id") int id) {
+		dsStudents.removeIf(student -> student.getId() == id);
+		return "redirect:/student/all";
+	})
 }
