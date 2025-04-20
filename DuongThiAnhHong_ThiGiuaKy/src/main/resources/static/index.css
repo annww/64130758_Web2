@@ -28,3 +28,54 @@
 	border-radius: 50%;
 	padding-bottom: 5px;
 }
+
+.topics{
+	grid-column: span 4/ span 4;
+	grid-row: span 5/ span 5;
+}
+
+.tb_DS {
+        border-collapse: collapse;
+        width: 100%;
+        font-family: Arial, sans-serif;
+        padding-bottom: 10px;
+    }
+
+.tb_DS th,
+.tb_DS td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.tb_DS thead {
+    background-color: #f2f2f2;
+}
+
+.tb_DS tr:hover {
+    background-color: #f9f9f9;
+}
+
+.tb_DS a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.tb_DS a:hover {
+    text-decoration: underline;
+}
+
+.btn-add-topic {
+	padding-top: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-add-topic:hover {
+    background-color: #218838;
+}

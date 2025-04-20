@@ -13,7 +13,7 @@
         <div th:replace="admin::navs"></div>
         <div class="topics">
             <h2>Danh sách các đề tài</h2>
-    <table border="1">
+    <table class="tb_DS" border="1">
         <thead>
             <tr>
                 <th>ID</th>
@@ -39,7 +39,8 @@
             </tr>
         </tbody>
     </table>
-    <a th:href="@{/topic/new}">Thêm đề tài mới</a>
+    <a th:href="@{/topic/new}" class="btn-add-topic">Thêm đề tài mới</a>
+
         </div>
     </div>
     <div th:replace="admin::footer"></div>
