@@ -99,11 +99,12 @@ public class HomeController {
 				break;
 			}
 		}
+		return "student/view";
 	}
 	
 	@GetMapping("/student/delete/{id}")
 	public String deleteStudent(@PathVariable("id") int id) {
 		dsStudents.removeIf(student -> student.getId() == id);
 		return "redirect:/student/all";
-	})
+	}
 }

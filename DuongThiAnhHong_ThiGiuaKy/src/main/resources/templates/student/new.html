@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thêm sinh viên</title>
+</head>
+<body>
+    <h1>Thêm sinh viên mới</h1>
+    <form action="/student/add" method="post">
+        <label for="name">Tên:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="groupId">Nhóm:</label>
+        <input type="text" id="groupId" name="groupId" required><br><br>
+
+        <button type="submit">Thêm</button>
+    </form>
+    <br>
+    <a href="/student/all">Quay lại danh sách</a>
+</body>
+</html>
