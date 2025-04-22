@@ -1,0 +1,12 @@
+package thiGK.ntu64130758.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class ThiGKController {
+	@GetMapping("/")
+	public String CV() {
+		return "cv";
+	}
+}
